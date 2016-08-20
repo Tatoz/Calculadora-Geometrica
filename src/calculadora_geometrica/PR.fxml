@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D7FFF1;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora_geometrica.PRController">
+   <children>
+      <Button fx:id="btnSalir" layoutX="59.0" layoutY="267.0" mnemonicParsing="false" onAction="#regresar" prefHeight="49.0" prefWidth="87.0" text="Salir" />
+      <Label layoutX="37.0" layoutY="22.0" text="Polígono Regular">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="72.0" fitWidth="132.0" layoutX="46.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@regular.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="228.0" layoutY="85.0" text="Números de lados:">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numLados" layoutX="392.0" layoutY="84.0" />
+      <Label layoutX="288.0" layoutY="127.0" text="Lados (cm):">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lado" layoutX="392.0" layoutY="126.0" />
+      <Label layoutX="295.0" layoutY="169.0" text="Apotema:">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="apotema" layoutX="392.0" layoutY="168.0" />
+      <Label layoutX="294.0" layoutY="210.0" text="Resultado:">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_Resultado" layoutX="392.0" layoutY="233.0" prefHeight="17.0" prefWidth="48.0" />
+      <Button fx:id="btnArea" layoutX="316.0" layoutY="301.0" mnemonicParsing="false" onAction="#area" text="Área">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="392.0" layoutY="301.0" mnemonicParsing="false" onAction="#perimetro" text="Perímetro">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="392.0" layoutY="213.0" text="Cm">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="213.0" text="Pulgadas" />
+      <Label fx:id="label_Pulgadas" layoutX="443.0" layoutY="233.0" prefHeight="17.0" prefWidth="81.0" />
+      <Label layoutX="535.0" layoutY="213.0" text="Pies" />
+      <Label fx:id="label_Pies" layoutX="535.0" layoutY="234.0" prefHeight="17.0" prefWidth="63.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D7FFF1;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora_geometrica.PentagonoController">
+   <children>
+      <Button fx:id="btnSalir" layoutX="68.0" layoutY="291.0" mnemonicParsing="false" onAction="#regresar" prefHeight="43.0" prefWidth="79.0" text="Salir" />
+      <Label layoutX="41.0" layoutY="25.0" text="Pentágono">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="147.0" layoutX="45.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pentagono.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="232.0" layoutY="95.0" prefHeight="23.0" prefWidth="97.0" text="Lado(cm):">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lado" layoutX="329.0" layoutY="94.0" />
+      <Label layoutX="232.0" layoutY="148.0" text="Apotema:">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="apotema" layoutX="329.0" layoutY="147.0" />
+      <Button fx:id="btnArea" layoutX="266.0" layoutY="291.0" mnemonicParsing="false" onAction="#area" text="Área">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPerimetro" layoutX="356.0" layoutY="290.0" mnemonicParsing="false" onAction="#perimetro" text="Perímetro">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="231.0" layoutY="200.0" text="Resultado:">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_Resultado" layoutX="342.0" layoutY="223.0" prefHeight="17.0" prefWidth="54.0" />
+      <Label layoutX="342.0" layoutY="203.0" text="Cm">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="404.0" layoutY="202.0" text="Pulgadas" />
+      <Label fx:id="label_Pulgadas" layoutX="404.0" layoutY="223.0" prefHeight="17.0" prefWidth="69.0" />
+      <Label layoutX="497.0" layoutY="203.0" text="Pies" />
+      <Label fx:id="label_Pies" layoutX="494.0" layoutY="223.0" prefHeight="17.0" prefWidth="90.0" />
+   </children>
+</AnchorPane>
