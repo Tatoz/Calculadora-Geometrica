@@ -63,7 +63,7 @@ public class Crear {
         File historial = null;
         
         try{
-            historial = new File ("historial.txt");
+            historial = new File ("historial.txt");//Aqui se crea el nombre del archivo txt
             BufferedWriter bf = new BufferedWriter(new FileWriter(datos,true));
         }catch(Exception e){
         }

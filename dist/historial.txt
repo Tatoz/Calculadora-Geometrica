@@ -1,3 +1,0 @@
-Figura: poligono regular	Cm: 25.0	Pulgadas: 9.84252	Pie: 0.8202
-Figura: poligono regular	Cm: 62.5	Pulgadas: 24.606298	Pie: 2.0505
-Figura: poligono regular	Cm: 25.0	Pulgadas: 9.84252	Pie: 0.8202
